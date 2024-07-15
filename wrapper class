@@ -1,31 +1,24 @@
-
-import java.util.*;
-public class Wrapper{
-    public static void main(String [] args){
+public class WrapperExample3{  
+public static void main(String args[]){  
+        byte b=10;  
+        short s=20;  
+        int i=30;  
+        long l=40;  
+        float f=50.0F;  
+        double d=60.0D;  
+        char c='a';  
+        boolean b2=true;  
         
-        byte a =1;
-        Byte obj1 = new Byte(a);
-        
-        int b =10;
-        Integer obj2 = new Integer(b);
-        
-        char c ='a';
-        Character obj3 = new Character(c);
-        
-        float d = 10.1f;
-        Float obj4 = new Float(d);
-        
-        double e = 7.322d;
-        Double obj5 = new Double(e);
-        
-        long f = 1234567l;
-        Long obj6 = new Long(f);
-        
-        
-        boolean g =true;
-        Boolean obj7 = new Boolean(g);
-        
-    
+        Byte obj=new Byte(b);
+        Short obj1=new Short(s);
+        Integer obj2=new Integer(i);
+        Long obj3=new Long(l);
+        Float obj4=new Float(f);
+        Double obj5=new Double(d);
+        Character obj6=new Character(c);
+        Boolean obj7=new Boolean(b2);
+       
+        System.out.println(obj);
         System.out.println(obj1);
         System.out.println(obj2);
         System.out.println(obj3);
@@ -33,8 +26,6 @@ public class Wrapper{
         System.out.println(obj5);
         System.out.println(obj6);
         System.out.println(obj7);
-        
-        
-    }
-    
+        }
 }
+
