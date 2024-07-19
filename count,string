@@ -1,0 +1,44 @@
+import java.util.*;
+public class main 
+{
+    public static void main(String args[])
+    {
+        String str="BARath05@gmail";
+        char ch[]=str.toCharArray();
+        int num_c=0;
+        int char_c=0;
+        int upp_c=0;
+        int low_c=0;
+        int spl_c=0;
+        for(int i=0;i<ch.length;i++)
+        {
+            char c=ch[i];
+            if(Character.isDigit(c)){
+                num_c++;
+                
+            }
+            else if(Character.isLetter(c))
+            {
+                char_c++;
+            
+            if(Character.isLowerCase(c))
+            {
+                low_c++;
+            }
+            else if(Character.isUpperCase(c))
+            {
+                upp_c++;
+            }
+            }
+            else{
+                spl_c++;
+            }
+        }
+        System.out.println(num_c);
+        System.out.println(upp_c);
+        System.out.println(low_c);
+        System.out.println(char_c);
+        System.out.println(spl_c);
+        
+    }
+}
