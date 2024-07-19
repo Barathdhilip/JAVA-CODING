@@ -1,0 +1,20 @@
+import java.util.*;
+public class main
+{
+    public static void main(String[] args)
+    {
+      Scanner sc=new Scanner(System.in);
+      String str=sc.nextLine().toUpperCase();
+      for(int i=65;i<=90;i++)
+      {
+          if(str.contains(Character.toString(i)))
+          {
+              System.out.println(Character.toString(i)+(str.indexOf(i)));
+          }
+          else
+          {
+              System.out.println(Character.toString(i)+-1);
+          }
+      }
+    }
+}
