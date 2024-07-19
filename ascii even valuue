@@ -1,0 +1,15 @@
+import java.util.*;
+public class main
+{
+    public static void main(String[] args)
+    {
+        char mnn =97;
+        for(char i=mnn;i<=122;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println(i+" ");
+            }
+        }
+    }
+}
