@@ -1,0 +1,29 @@
+import java.util.*;
+public class main
+{
+    public static void main(String[] args )
+    {
+        String str="RGBBGAR";
+        boolean match=true;
+        String ans =str;
+        while(match)
+        {
+            match=false;
+            StringBuilder sb=new StringBuilder();
+            for(int i=0;i<ans.length();i++)
+            {
+                if(i<ans.length()-1 && ans.charAt(i)==ans.charAt(i+1))
+                {
+                    
+                    match=true;
+                    i++;
+                }else{
+                sb.append(ans.charAt(i));
+            }
+          
+        }
+        ans=sb.toString();  
+        }
+        System.out.println(ans);
+    }
+}
